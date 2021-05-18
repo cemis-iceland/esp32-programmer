@@ -1,0 +1,171 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:CH340G U?
+U 1 1 60B77A02
+P 5300 3500
+F 0 "U?" H 5050 2950 50  0000 C CNN
+F 1 "CH340G" H 5500 2950 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5350 2950 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 4950 4300 50  0001 C CNN
+	1    5300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 60B78CA0
+P 3800 3400
+F 0 "J?" H 3857 3867 50  0000 C CNN
+F 1 "U-M-M5SS-W-2" H 3857 3776 50  0000 C CNN
+F 2 "" H 3950 3350 50  0001 C CNN
+F 3 "~" H 3950 3350 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/USB-Connectors_Korean-Hroparts-Elec-U-M-M5SS-W-2_C91144.html/?href=jlc-SMT" H 3800 3400 50  0001 C CNN "LCSC"
+	1    3800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3400 4900 3400
+Wire Wire Line
+	4100 3500 4900 3500
+Text Notes 4900 3500 2    50   ~ 0
+Internal resistors
+Text Notes 4900 3800 2    50   ~ 0
+12MHz
+$Comp
+L Device:Crystal Y?
+U 1 1 60B7C29D
+P 4400 3850
+F 0 "Y?" V 4500 4050 50  0000 R CNN
+F 1 "XSHEELNANF-12MHZ" V 4600 4050 50  0000 R CNN
+F 2 "" H 4400 3850 50  0001 C CNN
+F 3 "~" H 4400 3850 50  0001 C CNN
+	1    4400 3850
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3700 3800
+Wire Wire Line
+	3800 3800 3800 3900
+$Comp
+L power:GND #PWR?
+U 1 1 60B7FF57
+P 3800 3900
+F 0 "#PWR?" H 3800 3650 50  0001 C CNN
+F 1 "GND" H 3805 3727 50  0000 C CNN
+F 2 "" H 3800 3900 50  0001 C CNN
+F 3 "" H 3800 3900 50  0001 C CNN
+	1    3800 3900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4100 3600
+Wire Wire Line
+	4100 3200 4300 3200
+Wire Wire Line
+	4300 3200 4300 3000
+$Comp
+L power:+5VD #PWR?
+U 1 1 60B80375
+P 4300 3000
+F 0 "#PWR?" H 4300 2850 50  0001 C CNN
+F 1 "+5VD" H 4315 3173 50  0000 C CNN
+F 2 "" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60B80565
+P 5200 2700
+F 0 "#PWR?" H 5200 2550 50  0001 C CNN
+F 1 "+3V3" H 5215 2873 50  0000 C CNN
+F 2 "" H 5200 2700 50  0001 C CNN
+F 3 "" H 5200 2700 50  0001 C CNN
+	1    5200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2700 5200 2800
+Wire Wire Line
+	5200 2800 5300 2800
+Wire Wire Line
+	5300 2800 5300 2900
+Connection ~ 5200 2800
+Wire Wire Line
+	5200 2800 5200 2900
+$Comp
+L power:GND #PWR?
+U 1 1 60B80D8B
+P 5300 4700
+F 0 "#PWR?" H 5300 4450 50  0001 C CNN
+F 1 "GND" H 5305 4527 50  0000 C CNN
+F 2 "" H 5300 4700 50  0001 C CNN
+F 3 "" H 5300 4700 50  0001 C CNN
+	1    5300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3700 4600 3700
+Connection ~ 4600 3700
+Wire Wire Line
+	4600 3700 4900 3700
+Wire Wire Line
+	4400 4000 4850 4000
+Wire Wire Line
+	4850 4000 4850 3900
+Wire Wire Line
+	4850 3900 4900 3900
+$Comp
+L Device:C C?
+U 1 1 60B82D26
+P 4600 4350
+F 0 "C?" H 4486 4304 50  0000 R CNN
+F 1 "C" H 4486 4395 50  0000 R CNN
+F 2 "" H 4638 4200 50  0001 C CNN
+F 3 "~" H 4600 4350 50  0001 C CNN
+	1    4600 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B83582
+P 4850 4350
+F 0 "C?" H 4965 4396 50  0000 L CNN
+F 1 "C" H 4965 4305 50  0000 L CNN
+F 2 "" H 4888 4200 50  0001 C CNN
+F 3 "~" H 4850 4350 50  0001 C CNN
+	1    4850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3700 4600 4200
+Wire Wire Line
+	4850 4000 4850 4200
+Connection ~ 4850 4000
+Wire Wire Line
+	5300 4100 5300 4600
+Wire Wire Line
+	5300 4600 4850 4600
+Wire Wire Line
+	4600 4600 4600 4500
+Connection ~ 5300 4600
+Wire Wire Line
+	5300 4600 5300 4700
+Wire Wire Line
+	4850 4500 4850 4600
+Connection ~ 4850 4600
+Wire Wire Line
+	4850 4600 4600 4600
+$EndSCHEMATC
