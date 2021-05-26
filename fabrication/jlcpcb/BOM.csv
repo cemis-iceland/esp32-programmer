@@ -1,0 +1,10 @@
+Reference, Quantity, Value, Footprint, LCSC
+C1 C2 C3 ,3,10uF,Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A,C7171
+C4 C5 ,2,30pf,Capacitor_SMD:C_0603_1608Metric,C22397
+J1 ,1,MicroQTJ,esp32-programmer:USB_MicroQTJ,C404968
+J2 ,1,Conn_01x06_Male,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,C124380
+Q1 Q2 ,2,SS8050,Package_TO_SOT_SMD:SOT-23,C2150
+R1 R2 ,2,12k,Resistor_SMD:R_0603_1608Metric,C22790
+U1 ,1,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2,C6186
+U2 ,1,CH340G,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,C14267
+Y1 ,1,XSHEELNANF-12MHZ,esp32-programmer:XTAL_XSHEELNANF-12MHZ,C295065
